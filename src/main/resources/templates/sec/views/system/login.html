@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>安全检查管理</title>
+    <link rel="stylesheet" href="../../../../layui/css/layui.css" media="all">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+    <script src="../../../../layui/layui.js"></script>
+    <script src="../../../../layui/layui.all.js"></script>
+    <script src="../../../../layui/lay/modules/layer.js"></script>
+    <link rel="icon" href="../../../../images/logo.ico" type="image/x-icon">
+</head>
+<style>
+    *{
+        line-height: 50px;
+        font-size: 20px;
+    }
+    body {
+        background: #f0f2f5;
+        font: 13px Helvetica Neue, Helvetica, PingFang SC, Tahoma, Arial, sans-serif;
+        font-family: Chinese Quote, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    div {
+        display: block;
+    }
+
+    .layui-form {
+        overflow: hidden;
+        background: #fff;
+        padding: 40px 40px 20px;
+        border-radius: 0;
+        box-shadow: 1px 3px 3px #ccc;
+        position: relative;
+        width: 400px;
+        height: 300px;
+        -webkit-transform: translateX(150%) translateY(70%);
+    }
+
+    .layui-form-item {
+        position: relative;
+    }
+
+    .label-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 38px;
+        line-height: 38px;
+        text-align: center;
+        color: #d2d2d2 !important;
+        font-family: 'layui-icon', 'nep-icon' !important;
+    }
+
+    .layui-input {
+        text-indent: 26px;
+        border-radius: 2px;
+        border-color: #eee;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .login-type-tab {
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+</style>
+<body>
+<div class="layui-form" lay-filter="login-form" id="login-form">
+    <div >
+        <ul class="login-type-tab">
+            <li class="active"><strong>系统登录</strong></li>
+        </ul>
+        <div class="layui-form-item">
+            <label class="layui-icon label-icon layui-icon-username"></label>
+            <input type="text" name="username" id="username" lay-verify="required"
+                   placeholder="用户名" autocomplete="off" class="layui-input">
+        </div>
+        <div class="layui-form-item password-block">
+            <label class="layui-icon label-icon layui-icon-password"></label>
+            <input type="password" name="password" id="password" lay-verify="required"
+                   placeholder="密码" autocomplete="off" class="layui-input">
+        </div>
+        <div class="layui-form-item">
+            <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit
+                    lay-filter="login-submit" id="login">
+                <i style="display: none"
+                   class="layui-icon layui-icon-loading layui-icon layui-anim layui-anim-rotate layui-anim-loop"></i>
+                立即登录
+            </button>
+        </div>
+    </div>
+</div>
+<!--</div>-->
+<script>
+    layui.use(['jquery', 'layer', 'form'], function () {
+        var $ = layui.$,
+            layer = layui.layer,
+            form = layui.form;
+
+        //提交登录表单
+        form.on('submit(login-submit)', function (data) {
+            var loading = $(this).find('.layui-icon');
+            if (loading.is(":visible")) return;
+            loading.show();
+            $.post('/login', data.field, function (r) {
+                if (r.code === 1001) {
+                    location.href = '/sec/query';
+                } else {
+                    layer.msg(r.msg);
+                    loading.hide();
+                }
+            });
+            return false;
+        });
+
+        $('#login-form').on('keydown', function (e) {
+            if (e.keyCode === 13) {
+                $('#login').click();
+            }
+        });
+    });
+</script>
+</body>
+</html>

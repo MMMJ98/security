@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>安全检查管理</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../../layui/css/layui.css" media="all">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+    <script src="../../../layui/layui.js"></script>
+    <script src="../../../layui/layui.all.js"></script>
+    <script src="../../../layui/lay/modules/laydate.js"></script>
+    <script src="../../../layui/lay/modules/layer.js"></script>
+    <script src="../../../layui/lay/modules/util.js"></script>
+    <link rel="icon" href="../../../images/logo.ico" type="image/x-icon">
+</head>
+<style>
+    .result-query {
+        margin-top: 20px;
+        padding-top: 10px
+    }
+
+    .layui-table-form {
+        text-align: center;
+    }
+
+    .ps {
+        margin-left: 30px
+    }
+
+</style>
+<body>
+<fieldset class="layui-elem-field result-query">
+    <legend>外委检查队伍管理 - 结果查询页</legend>
+    <div class="layui-field-box " xmlns:th="http://www.w3.org/1999/xhtml">
+        <form class="layui-form layui-table-form" lay-filter="query-table-form" id="query-table-form">
+            <div class="layui-row">
+                <div class="layui-col-md10">
+                    <!--按检查表名称查询-->
+                    <div class="layui-inline">
+                        <label class="layui-form-label">检查表名称</label>
+                        <div class="layui-input-block">
+                            <select id="sheetName" name="sheetName"
+                                    lay-filter="sheetName">
+                                <option style="display: none"></option>
+                                <option th:each="sn : ${sheetNames}"
+                                        th:text="${sn.sheetName}"
+                                        th:value="${sn.sheetName}"></option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--按检查人查询-->
+                    <div class="layui-inline">
+                        <label class="layui-form-label layui-form-label-sm"
+                               style="width: 60px">检查人</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="checkPerson" autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                    <!--按检查部门查询-->
+                    <div class="layui-inline">
+                        <label class="layui-form-label layui-form-label-sm"
+                               style="width: 60px">检查部门</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="department" autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                    <!--按检查对象查询-->
+                    <div class="layui-inline">
+                        <label class="layui-form-label layui-form-label-sm"
+                               style="width: 60px">检查对象</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="objectName" autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                    <!--按提交时间查询-->
+                    <div class="layui-inline">
+                        <label class="layui-form-label layui-form-label-sm"
+                               style="width: 60px">检查时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="submitTime" id="submitTime"
+                                   autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md2 ">
+                    <button class="layui-btn" type="button" id="query" data-type="query">搜索</button>
+                    <button class="layui-btn layui-btn-primary" type="button" id="reset" data-type="reset">重置</button>
+                </div>
+            </div>
+        </form>
+
+        <table lay-filter="queryTable" id="queryTable"></table>
+    </div>
+    <span class="layui-badge ps">注</span>
+    <span class="layui-badge layui-bg-gray"> 表格列宽可自由调整</span>
+    <br/><br/>
+</fieldset>
+<ul class="layui-fixbar" >
+    <li class="layui-icon layui-icon-password" id="passwordUpdate"></li>
+    <li th:if="${user.userName=='admin'}" class="layui-icon layui-icon-user" id="register"></li>
+    <li class="layui-icon layui-icon-logout" id="logout"></li>
+</ul>
+
+<script type="text/html" id="result-option">
+    <a lay-event="viewResult" title="查看结果"><i
+            class="layui-icon layui-icon-read"></i> </a>
+</script>
+<script type="text/html" id="excel-option">
+    <a lay-event="excelResult" class="excel" title=""><i
+            class="layui-icon layui-icon-download-circle"></i></a>
+</script>
+<script data-th-inline="javascript" type="text/javascript">
+    layui.use(['jquery', 'layer', 'form', 'table', 'element', 'util'], function () {
+        var $ = layui.$,
+            table = layui.table,
+            layer = layui.layer,
+            form = layui.form,
+            laydate = layui.laydate,
+            element = layui.element,
+            util = layui.util,
+            sheetNames = [[${sheetNames}]],
+            user = [[${user}]];
+
+        form.render();
+        element.init();
+
+        laydate.render({
+            elem: '#submitTime',
+            range: true,
+            trigger: 'click',
+            btns: ['confirm']
+        });
+
+        /** 判断当前登录用户是否为管理员admin
+         *  若为admin则查询所有  否则只显示当前登录人员的录入记录
+         *  且将检查人的input输入框默认填上该当前用户的用户名，并将输入框设置为仅可读
+         */
+        var currentUser = "", searchUrl = "";
+        if (user.userName != 'admin') {
+            currentUser = user.userName;
+            $("input[name='checkPerson']").val(currentUser);
+            $("input[name='checkPerson']").attr('readonly', 'readonly');
+            searchUrl = '/resultRecord/getResultInfos?checkPerson=' + currentUser;
+        } else {
+            searchUrl = '/resultRecord/getResultInfos';
+        }
+
+        table.render({
+            id: 'queryTable',
+            elem: '#queryTable',
+            url: searchUrl,
+            sort: true,
+            page: true,
+            width: 1875,
+            cols: [
+                [
+                    {type: 'checkbox'},
+                    {field: 'sheetName', title: '检查表名称', width: 270, align: "center", sort: true},
+                    {field: 'entryName', title: '检查条目', align: "center", sort: true},
+                    {field: 'objectName', title: '检查对象', width: 150, align: "center", sort: true},
+                    {field: 'frequency', title: '检查频率', width: 100, align: "center"},
+                    {field: 'department', title: '检查部门', width: 250, align: "center"},
+                    {field: 'submitTime', title: '检查时间', minWidth: 100, align: "center"},
+                    {field: 'remark', title: '检查情况说明', width: 100, align: "center"},
+                    {field: 'checkPerson', title: '检查人', width: 100, align: "center"},
+                    {title: '检查结果', toolbar: '#result-option', width: 100, align: "center"},
+                    {title: '下载导出',toolbar: '#excel-option', width: 100, align: "center"}
+                ]
+            ],
+            parseData: function (res) {
+                return {
+                    "code": res.code === 200 ? 0 : res.code, //解析接口状态
+                    "data": res.data.rows,//解析数据列表
+                    "count": res.data.total
+                };
+            }
+        });
+
+        table.on('tool(queryTable)', function (obj) {
+            var data = obj.data,
+                layEvent = obj.event;
+
+            if (layEvent === 'viewResult') {
+                layer.open({
+                    type: 2,
+                    title: "检查结果明细页",
+                    area: ['70%', '70%'],
+                    content: 'query/detail/ ' + data.resultId,
+                    maxmin: true
+                });
+            }
+
+            if (layEvent === 'excelResult'){
+                $('.excel').attr("href","/resultRecord/excel/getWholeResults/"+ data.resultId)
+            }
+
+        });
+
+        $('#query').on('click', function () {
+            table.reload('queryTable', {where: getQueryParams(), page: {curr: 1}});
+        });
+        $('#reset').on('click', function () {
+            $("select[name='sheetName']").val("");
+            $("input[name='department']").val("");
+            $("input[name='checkPerson']").val("");
+            $('#submitTime').val("");
+            table.reload('queryTable', {where: null, page: {curr: 1}});
+            form.render();
+        });
+
+        $('#query-table-form').on('keydown', function (e) {
+            if (e.keyCode === 13) {
+                $('#query').click();
+            }
+        });
+
+        $('#passwordUpdate').click(function () {
+            layer.open({
+                type: 2,
+                title: "修改密码页",
+                area: ['30%', '35%'],
+                content: 'user/updatePwd/',
+                maxmin: true
+            })
+        })
+
+        $('#logout').click(function () {
+            parent.window.location.href = "/login"
+        })
+
+        $('#register').click(function () {
+            layer.open({
+                type: 2,
+                title: "注册用户",
+                area: ['30%', '30%'],
+                content: 'user/register/',
+                maxmin: true
+            })
+        })
+
+        function getQueryParams() {
+            var submitTimeFrom,
+                submitTimeTo,
+                sheetName,
+                department,
+                objectName,
+                checkPerson,
+                submitTime = $('input[name="submitTime"]').val();
+            if (submitTime) {
+                submitTimeFrom = submitTime.split(' - ')[0];
+                submitTimeTo = submitTime.split(' - ')[1] + " 23:59:59";
+            }
+            if ($("select[name='sheetName']").val()) {
+                sheetName = $("select[name='sheetName']").val()
+            }
+            if ($("input[name='department']").val()) {
+                department = $("input[name='department']").val()
+            }
+            if ($("input[name='objectName']").val()) {
+                objectName = $("input[name='objectName']").val()
+            }
+            if ($("input[name='checkPerson']").val()) {
+                checkPerson = $("input[name='checkPerson']").val()
+            }
+            return {
+                submitTimeFrom: submitTimeFrom,
+                submitTimeTo: submitTimeTo,
+                sheetName: sheetName,
+                department: department,
+                objectName: objectName,
+                checkPerson: checkPerson
+            };
+        }
+
+    });
+</script>
+</body>
+</html>

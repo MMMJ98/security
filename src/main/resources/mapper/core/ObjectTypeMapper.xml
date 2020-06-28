@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jzrd.security.core.mapper.ObjectTypeMapper">
+
+    <select id="getTypesByEntryId" parameterType="int" resultType="objectType">
+        SELECT
+            check_entry.id entry_id,
+            check_entry.`name` entry_name,
+            object_type.id type_id,
+            object_type.`name` type_name
+        FROM
+            check_entry
+                INNER JOIN object_type ON check_entry.object_type_id = object_type.id
+        WHERE
+            check_entry.id = #{entryId}
+    </select>
+</mapper>

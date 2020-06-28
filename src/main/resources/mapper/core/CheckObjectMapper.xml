@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jzrd.security.core.mapper.CheckObjectMapper">
+
+    <select id="getObjectsByObjectTypeId" parameterType="int" resultType="checkObject">
+        SELECT
+            check_object.id object_id,
+            check_object.object_type_id type_id,
+            check_object.`name` object_name,
+            object_type.`name` type_name
+        FROM
+            check_object
+                INNER JOIN object_type ON check_object.object_type_id = object_type.id
+        WHERE
+            check_object.object_type_id = #{typeId}
+
+    </select>
+</mapper>

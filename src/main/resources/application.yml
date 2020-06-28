@@ -1,0 +1,41 @@
+server:
+  port: 9898
+  tomcat:
+    uri-encoding: utf-8
+#SSL配置
+  ssl:
+    key-store: classpath:3839038_www.jzrdsec.cn.pfx
+    key-store-password: Y73Ub4O2
+    key-store-type: PKCS12
+
+spring:
+  profiles:
+    active: dev
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  aop:
+    proxy-target-class: true
+
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 2MB
+
+mybatis-plus:
+  type-aliases-package: com.jzrd.security.*.entity
+  mapper-locations: classpath:mapper/*/*.xml
+  configuration:
+    jdbc-type-for-null: null
+    # 返回的字段值为null时也填充到map结果集中
+    call-setters-on-nulls: true
+  global-config:
+    # 关闭 mybatis-plus的 banner
+    banner: false
+
+# 文件上传的相对路径
+file:
+  upload:
+    path: upload/attachment/

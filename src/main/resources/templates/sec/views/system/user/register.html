@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../../../layui/css/layui.css" media="all">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+    <script src="../../../../../layui/layui.js"></script>
+    <script src="../../../../../layui/layui.all.js"></script>
+</head>
+<style>
+    .layui-collapse {
+        width: 85%;
+        height: 85%;
+        margin-top: 3%;
+        margin-left: 5%;
+        padding-top: 25px;
+        padding-right: 20px;
+    }
+
+</style>
+<body>
+<div class="layui-collapse">
+    <form class="layui-form" action="" lay-filter="register-form" id="register-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label febs-form-item-require">用户名</label>
+            <div class="layui-input-block">
+                <input type="text" name="userName" lay-verify="required"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item" style="text-align: center">
+            <button class="layui-btn layui-btn-normal" lay-submit
+                    lay-filter="register-submit" id="register">
+                注册
+            </button>
+        </div>
+    </form>
+
+</div>
+<br/>
+<span class="layui-badge ps" style="margin-left: 30px">注</span>
+<span class="layui-badge layui-bg-gray"> 初始密码均为 123456</span>
+<script data-th-inline="javascript" type="text/javascript">
+    layui.use(['form', 'layer'], function () {
+        var $ = layui.$,
+            form = layui.form,
+            layer = layui.layer;
+
+        form.render();
+
+        form.on('submit(register-submit)', function (data) {
+            $.post('/user/register', data.field, function (r) {
+                if (r.code == 3001) {
+                    layer.msg(r.msg);
+                    // 清空表单
+                    $("#register-form")[0].reset();
+                    form.render();
+                } else {
+                    layer.msg('用户注册成功！', {icon: 1}, function () {
+                        // //获取窗口索引
+                        var index = parent.layer.getFrameIndex(window.name);
+                        parent.layer.close(index);
+                        // parent.window.location.href="/login"
+                    });
+                }
+
+            });
+            return false;
+        });
+
+        $('#register-form').on('keydown', function (e) {
+            if (e.keyCode === 13) {
+                $('#register').click();
+            }
+        });
+    });
+</script>
+</body>
+</html>

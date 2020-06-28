@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jzrd.security.result.mapper.QueryCollectionMapper">
+
+    <select id="getResultInfos" resultType="queryCollection" parameterType="queryCollection">
+        SELECT
+        check_entry.sheet_id,
+        check_result.entry_id,
+        check_result.object_id,
+        check_result.id AS result_id,
+        check_sheet.`name` AS sheet_name,
+        check_entry.`name` AS entry_name,
+        check_result.object_name,
+        check_entry.frequency,
+        check_entry.department,
+        check_result.check_person,
+        check_result.submit_time,
+        check_result.remark
+        FROM
+        check_result
+        INNER JOIN check_entry ON check_result.entry_id = check_entry.id
+        INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id
+        WHERE 1=1
+        <if test="queryCollection.sheetId != null and queryCollection.sheetId != ''">
+            AND check_entry.sheet_id = #{queryCollection.sheetId}
+        </if>
+        <if test="queryCollection.sheetName != null and queryCollection.sheetName != ''">
+            AND check_sheet.name = #{queryCollection.sheetName}
+        </if>
+        <if test="queryCollection.department != null and queryCollection.department != ''">
+            AND check_result.department = #{queryCollection.department}
+        </if>
+        <if test="queryCollection.objectName != null and queryCollection.objectName != ''">
+            AND check_result.object_name like concat('%',#{queryCollection.objectName},'%')
+        </if>
+        <if test="queryCollection.checkPerson != null and queryCollection.checkPerson != ''">
+            AND check_result.check_person = #{queryCollection.checkPerson}
+        </if>
+        <if test="queryCollection.submitTimeFrom != null and queryCollection.submitTimeFrom !=''">
+            And check_result.submit_time &gt;= #{queryCollection.submitTimeFrom}
+        </if>
+        <if test="queryCollection.submitTimeTo!= null and queryCollection.submitTimeTo !=''">
+            And check_result.submit_time &lt;= #{queryCollection.submitTimeTo}
+        </if>
+
+        ORDER BY
+        check_result.submit_time DESC
+    </select>
+
+    <select id="getResultDetails" resultType="queryCollection" parameterType="int">
+        SELECT check_entry.id         AS entry_id,
+               check_result.id        AS result_id,
+               check_result_detail.id AS detail_id,
+               check_entry.`name`     AS entry_name,
+               check_item.`name`      AS item_name,
+               check_result.object_name,
+               check_result_detail.item_result,
+               check_result.remark
+        FROM check_entry
+                 INNER JOIN check_result ON check_entry.id = check_result.entry_id
+                 INNER JOIN check_result_detail ON check_result_detail.result_id = check_result.id
+                 INNER JOIN check_item ON check_item.id = check_result_detail.item_id
+        WHERE check_result.id = #{resultId}
+
+    </select>
+    
+    <select id="getWholeResults" resultType="queryCollection" parameterType="int">
+        SELECT
+            check_sheet.id AS sheet_id,
+            check_entry.id AS entry_id,
+            check_result.id AS result_id,
+            check_sheet.`name` AS sheet_name,
+            check_entry.`name` AS entry_name,
+            check_result.object_name,
+            check_item.`name` AS item_name,
+            check_result_detail.item_result,
+            check_entry.frequency,
+            check_entry.department,
+            check_result.check_person,
+            check_result.submit_time,
+            check_result.remark
+        FROM check_entry
+                 INNER JOIN check_result ON check_entry.id = check_result.entry_id
+                 INNER JOIN check_result_detail ON check_result_detail.result_id = check_result.id
+                 INNER JOIN check_item ON check_item.id = check_result_detail.item_id
+                 INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id
+        WHERE check_result.id = #{resultId}
+        ORDER BY sheet_id,entry_id,result_id ASC
+    </select>
+</mapper>

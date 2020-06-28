@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jzrd.security.core.mapper.CheckItemMapper">
+
+    <select id="getItemsByEntryId" parameterType="int" resultType="checkItem">
+        SELECT
+            check_entry.id AS entry_id,
+            check_entry.`name` AS entry_name,
+            check_item.id AS item_id,
+            check_item.`name` AS item_name,
+            check_item.attr_type,
+            check_item.ext_info
+        FROM check_entry
+                 INNER JOIN check_item ON check_entry.id = check_item.entry_id
+        WHERE
+            check_entry.id = #{entryId}
+    </select>
+</mapper>

@@ -1,0 +1,479 @@
+2020-06-17 12:57:53.429 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 19228 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 12:57:53.436 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 12:57:53.606 security [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\maven\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-06-17 12:57:53.607 security [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-17 12:57:53.607 security [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-17 12:57:55.505 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 12:57:55.511 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 12:57:55.609 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39ms. Found 0 Redis repository interfaces.
+2020-06-17 12:57:56.382 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 12:57:56.385 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$37012877] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 12:57:56.396 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 12:57:56.402 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 12:57:57.278 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9898 (https) 8080 (http)
+2020-06-17 12:57:57.295 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 12:57:57.296 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-17 12:57:57.323 security [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-17 12:57:57.324 security [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-17 12:57:57.479 security [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-17 12:57:57.479 security [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3871 ms
+2020-06-17 12:57:57.623 security [restartedMain] INFO  c.jzrd.security.system.xss.XssFilter - ------------ xss filter init ------------
+2020-06-17 12:57:57.887 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-检测到并开启了p6spy
+2020-06-17 12:57:57.905 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Starting...
+2020-06-17 12:57:59.303 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Start completed.
+2020-06-17 12:57:59.303 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 初始共加载 1 个数据源
+2020-06-17 12:57:59.304 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-加载 base 成功
+2020-06-17 12:57:59.304 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 当前的默认数据源是单数据源，数据源名为 base
+2020-06-17 12:58:01.229 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+2020-06-17 12:58:01.231 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'febsAsyncThreadPool'
+2020-06-17 12:58:01.267 security [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-17 12:58:01.562 security [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-06-17 12:58:01.660 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - 自定义静态资源目录、此处功能用于文件映射
+2020-06-17 12:58:02.391 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-06-17 12:58:02.440 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-06-17 12:58:02.522 security [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-06-17 12:58:03.210 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 12:58:03.497 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-17 12:58:03.517 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9898 (https) 8080 (http) with context path ''
+2020-06-17 12:58:03.529 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Started SecurityApplication in 12.727 seconds (JVM running for 18.909)
+2020-06-17 12:58:28.522 security [https-jsse-nio-9898-exec-6] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-17 12:58:28.522 security [https-jsse-nio-9898-exec-6] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-06-17 12:58:28.535 security [https-jsse-nio-9898-exec-6] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2020-06-17 12:58:41.024 security [https-jsse-nio-9898-exec-6] INFO  p6spy - 1592369921023|34|statement|connection 1|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT id, name AS userName, password, department FROM check_user WHERE name = ?|SELECT id, name AS userName, password, department FROM check_user WHERE name = 'admin'
+2020-06-17 12:58:41.216 security [https-jsse-nio-9898-exec-5] INFO  p6spy - 1592369921216|33|statement|connection 2|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT id AS sheetId, name AS sheetName, order_no, remark FROM check_sheet|SELECT id AS sheetId, name AS sheetName, order_no, remark FROM check_sheet
+2020-06-17 12:58:41.893 security [https-jsse-nio-9898-exec-3] INFO  p6spy - 1592369921892|31|statement|connection 3|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1
+2020-06-17 12:58:41.936 security [https-jsse-nio-9898-exec-3] INFO  p6spy - 1592369921936|33|statement|connection 3|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT ?,?|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT 0,10
+2020-06-17 13:10:56.381 security [Thread-22] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'febsAsyncThreadPool'
+2020-06-17 13:10:56.386 security [Thread-22] INFO  c.b.d.d.DynamicRoutingDataSource - closing dynamicDatasource  ing....
+2020-06-17 13:10:56.386 security [Thread-22] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown initiated...
+2020-06-17 13:10:56.398 security [Thread-22] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown completed.
+2020-06-17 13:10:57.355 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 19228 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 13:10:57.355 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 13:10:59.189 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 13:10:59.189 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 13:10:59.217 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-06-17 13:10:59.391 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:10:59.392 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$37012877] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:10:59.397 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:10:59.398 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:10:59.431 security [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-17 13:11:10.862 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 19228 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 13:11:10.865 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 13:11:14.127 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 13:11:14.128 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 13:11:14.164 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 0 Redis repository interfaces.
+2020-06-17 13:11:14.710 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:11:14.712 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$37012877] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:11:14.729 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:11:14.730 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:11:14.774 security [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-17 13:11:51.256 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 19228 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 13:11:51.256 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 13:11:53.407 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 13:11:53.412 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 13:11:53.459 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45ms. Found 0 Redis repository interfaces.
+2020-06-17 13:11:53.831 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:11:53.832 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$37012877] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:11:53.836 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:11:53.837 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:11:53.895 security [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-17 13:11:56.910 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 19228 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 13:11:56.910 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 13:11:58.148 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 13:11:58.148 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 13:11:58.213 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64ms. Found 0 Redis repository interfaces.
+2020-06-17 13:11:58.479 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:11:58.479 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$37012877] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:11:58.482 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:11:58.483 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:11:58.802 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9898 (https) 8080 (http)
+2020-06-17 13:11:58.803 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 13:11:58.804 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-17 13:11:58.809 security [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-17 13:11:58.810 security [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-17 13:11:58.918 security [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-17 13:11:58.918 security [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1999 ms
+2020-06-17 13:11:59.002 security [restartedMain] INFO  c.jzrd.security.system.xss.XssFilter - ------------ xss filter init ------------
+2020-06-17 13:11:59.113 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-检测到并开启了p6spy
+2020-06-17 13:11:59.113 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Starting...
+2020-06-17 13:12:36.273 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 18704 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 13:12:36.305 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 13:12:36.508 security [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\maven\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-06-17 13:12:36.510 security [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-17 13:12:36.516 security [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-17 13:12:40.552 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 13:12:40.560 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 13:12:40.722 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101ms. Found 0 Redis repository interfaces.
+2020-06-17 13:12:43.373 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:12:43.378 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4757bc81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:12:43.391 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:12:43.397 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 13:12:45.039 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9898 (https) 8080 (http)
+2020-06-17 13:12:45.085 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 13:12:45.087 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-17 13:12:45.150 security [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-17 13:12:45.150 security [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-17 13:12:45.463 security [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-17 13:12:45.464 security [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8941 ms
+2020-06-17 13:12:45.638 security [restartedMain] INFO  c.jzrd.security.system.xss.XssFilter - ------------ xss filter init ------------
+2020-06-17 13:12:46.056 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-检测到并开启了p6spy
+2020-06-17 13:12:46.074 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Starting...
+2020-06-17 13:12:49.530 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Start completed.
+2020-06-17 13:12:49.530 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 初始共加载 1 个数据源
+2020-06-17 13:12:49.531 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-加载 base 成功
+2020-06-17 13:12:49.531 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 当前的默认数据源是单数据源，数据源名为 base
+2020-06-17 13:12:53.591 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+2020-06-17 13:12:53.592 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'febsAsyncThreadPool'
+2020-06-17 13:12:53.629 security [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-17 13:12:53.988 security [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-06-17 13:12:54.113 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - 自定义静态资源目录、此处功能用于文件映射
+2020-06-17 13:12:55.149 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-06-17 13:12:55.198 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-06-17 13:12:55.292 security [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-06-17 13:12:55.969 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 13:12:56.391 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-17 13:12:56.438 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9898 (https) 8080 (http) with context path ''
+2020-06-17 13:12:56.447 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Started SecurityApplication in 22.806 seconds (JVM running for 26.613)
+2020-06-17 13:13:15.569 security [https-jsse-nio-9898-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-17 13:13:15.570 security [https-jsse-nio-9898-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-06-17 13:13:15.589 security [https-jsse-nio-9898-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2020-06-17 13:13:23.780 security [https-jsse-nio-9898-exec-7] INFO  p6spy - 1592370803780|34|statement|connection 1|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT id, name AS userName, password, department FROM check_user WHERE name = ?|SELECT id, name AS userName, password, department FROM check_user WHERE name = 'admin'
+2020-06-17 13:13:23.956 security [https-jsse-nio-9898-exec-10] INFO  p6spy - 1592370803956|33|statement|connection 2|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT id AS sheetId, name AS sheetName, order_no, remark FROM check_sheet|SELECT id AS sheetId, name AS sheetName, order_no, remark FROM check_sheet
+2020-06-17 13:13:24.631 security [https-jsse-nio-9898-exec-4] INFO  p6spy - 1592370804631|34|statement|connection 3|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1
+2020-06-17 13:13:24.680 security [https-jsse-nio-9898-exec-4] INFO  p6spy - 1592370804680|40|statement|connection 3|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT ?,?|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT 0,10
+2020-06-17 13:13:29.135 security [https-jsse-nio-9898-exec-3] INFO  p6spy - 1592370809135|34|statement|connection 4|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1
+2020-06-17 13:13:29.174 security [https-jsse-nio-9898-exec-3] INFO  p6spy - 1592370809174|36|statement|connection 4|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT ?,?|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT 20,10
+2020-06-17 13:13:34.900 security [https-jsse-nio-9898-exec-10] INFO  p6spy - 1592370814900|37|statement|connection 5|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1
+2020-06-17 13:13:34.945 security [https-jsse-nio-9898-exec-10] INFO  p6spy - 1592370814945|42|statement|connection 5|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT ?,?|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT 50,10
+2020-06-17 13:13:44.938 security [https-jsse-nio-9898-exec-8] INFO  p6spy - 1592370824938|34|statement|connection 6|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1
+2020-06-17 13:13:44.975 security [https-jsse-nio-9898-exec-8] INFO  p6spy - 1592370824975|35|statement|connection 6|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT ?,?|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT 30,10
+2020-06-17 13:18:59.996 security [https-jsse-nio-9898-exec-4] INFO  p6spy - 1592371139996|34|statement|connection 7|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT id AS sheetId, name AS sheetName, order_no, remark FROM check_sheet|SELECT id AS sheetId, name AS sheetName, order_no, remark FROM check_sheet
+2020-06-17 13:19:00.616 security [https-jsse-nio-9898-exec-5] INFO  p6spy - 1592371140616|33|statement|connection 8|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1
+2020-06-17 13:19:00.652 security [https-jsse-nio-9898-exec-5] INFO  p6spy - 1592371140652|33|statement|connection 8|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT ?,?|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT 0,10
+2020-06-17 13:54:54.497 security [https-jsse-nio-9898-exec-2] INFO  p6spy - 1592373294497|32|statement|connection 9|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT id, name AS userName, password, department FROM check_user WHERE name = ?|SELECT id, name AS userName, password, department FROM check_user WHERE name = 'admin'
+2020-06-17 13:54:54.599 security [https-jsse-nio-9898-exec-7] INFO  p6spy - 1592373294599|34|statement|connection 10|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT id AS sheetId, name AS sheetName, order_no, remark FROM check_sheet|SELECT id AS sheetId, name AS sheetName, order_no, remark FROM check_sheet
+2020-06-17 13:54:54.899 security [https-jsse-nio-9898-exec-8] INFO  p6spy - 1592373294898|32|statement|connection 11|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1|SELECT COUNT(1) FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1
+2020-06-17 13:54:54.936 security [https-jsse-nio-9898-exec-8] INFO  p6spy - 1592373294935|34|statement|connection 11|url jdbc:mysql://120.27.247.71:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT ?,?|SELECT check_entry.sheet_id, check_result.entry_id, check_result.object_id, check_result.id AS result_id, check_sheet.`name` AS sheet_name, check_entry.`name` AS entry_name, check_result.object_name, check_entry.frequency, check_entry.department, check_result.check_person, check_result.submit_time, check_result.remark FROM check_result INNER JOIN check_entry ON check_result.entry_id = check_entry.id INNER JOIN check_sheet ON check_entry.sheet_id = check_sheet.id WHERE 1 = 1 ORDER BY check_result.submit_time DESC LIMIT 0,10
+2020-06-17 21:31:20.808 security [Thread-34] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'febsAsyncThreadPool'
+2020-06-17 21:31:20.823 security [Thread-34] INFO  c.b.d.d.DynamicRoutingDataSource - closing dynamicDatasource  ing....
+2020-06-17 21:31:20.838 security [Thread-34] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown initiated...
+2020-06-17 21:31:20.885 security [Thread-34] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown completed.
+2020-06-17 21:31:23.734 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 18704 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 21:31:23.734 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 21:31:25.244 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 21:31:25.244 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 21:31:25.344 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 99ms. Found 0 Redis repository interfaces.
+2020-06-17 21:31:26.860 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:31:26.863 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4757bc81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:31:26.875 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:31:26.880 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:31:27.531 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9898 (https) 8080 (http)
+2020-06-17 21:31:27.533 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 21:31:27.534 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-17 21:31:27.538 security [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-17 21:31:27.539 security [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-17 21:31:27.582 security [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-17 21:31:27.582 security [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3834 ms
+2020-06-17 21:31:27.644 security [restartedMain] INFO  c.jzrd.security.system.xss.XssFilter - ------------ xss filter init ------------
+2020-06-17 21:31:27.747 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-检测到并开启了p6spy
+2020-06-17 21:31:27.749 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Starting...
+2020-06-17 21:31:28.418 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Start completed.
+2020-06-17 21:31:28.419 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 初始共加载 1 个数据源
+2020-06-17 21:31:28.419 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-加载 base 成功
+2020-06-17 21:31:28.419 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 当前的默认数据源是单数据源，数据源名为 base
+2020-06-17 21:31:30.341 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+2020-06-17 21:31:30.343 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'febsAsyncThreadPool'
+2020-06-17 21:31:30.392 security [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-17 21:31:30.764 security [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-06-17 21:31:30.835 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - 自定义静态资源目录、此处功能用于文件映射
+2020-06-17 21:31:31.693 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-06-17 21:31:31.698 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-06-17 21:31:31.771 security [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-06-17 21:31:32.434 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 21:31:32.770 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-17 21:31:32.776 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9898 (https) 8080 (http) with context path ''
+2020-06-17 21:31:32.778 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Started SecurityApplication in 9.182 seconds (JVM running for 29942.964)
+2020-06-17 21:31:32.781 security [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-06-17 21:34:51.184 security [Thread-46] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'febsAsyncThreadPool'
+2020-06-17 21:34:51.194 security [Thread-46] INFO  c.b.d.d.DynamicRoutingDataSource - closing dynamicDatasource  ing....
+2020-06-17 21:34:51.194 security [Thread-46] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown initiated...
+2020-06-17 21:34:51.203 security [Thread-46] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown completed.
+2020-06-17 21:34:52.258 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 18704 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 21:34:52.259 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 21:34:53.444 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 21:34:53.444 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 21:34:53.495 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50ms. Found 0 Redis repository interfaces.
+2020-06-17 21:34:53.896 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:34:53.897 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4757bc81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:34:53.902 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:34:53.903 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:34:53.927 security [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-17 21:42:58.488 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 18704 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 21:42:58.489 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 21:42:59.331 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 21:42:59.331 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 21:42:59.354 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2020-06-17 21:42:59.591 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:42:59.597 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4757bc81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:42:59.602 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:42:59.607 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:42:59.629 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfigure' of type [com.jzrd.security.system.config.RedisConfigure$$EnhancerBySpringCGLIB$$e669437c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:43:00.295 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9898 (https) 8080 (http)
+2020-06-17 21:43:00.296 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 21:43:00.297 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-17 21:43:00.301 security [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-17 21:43:00.302 security [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-17 21:43:00.359 security [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-17 21:43:00.359 security [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1866 ms
+2020-06-17 21:43:00.426 security [restartedMain] INFO  c.jzrd.security.system.xss.XssFilter - ------------ xss filter init ------------
+2020-06-17 21:43:00.575 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-检测到并开启了p6spy
+2020-06-17 21:43:00.577 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Starting...
+2020-06-17 21:43:01.705 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Start completed.
+2020-06-17 21:43:01.705 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 初始共加载 1 个数据源
+2020-06-17 21:43:01.705 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-加载 base 成功
+2020-06-17 21:43:01.705 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 当前的默认数据源是单数据源，数据源名为 base
+2020-06-17 21:43:03.177 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+2020-06-17 21:43:03.178 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'febsAsyncThreadPool'
+2020-06-17 21:43:03.193 security [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-17 21:43:03.305 security [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-06-17 21:43:03.341 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - 自定义静态资源目录、此处功能用于文件映射
+2020-06-17 21:43:03.546 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-06-17 21:43:03.547 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-06-17 21:43:03.565 security [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-06-17 21:43:03.799 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 21:43:04.073 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-17 21:43:04.076 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9898 (https) 8080 (http) with context path ''
+2020-06-17 21:43:04.077 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Started SecurityApplication in 5.73 seconds (JVM running for 30634.263)
+2020-06-17 21:43:04.092 security [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   GenericCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+   RedisConfigure#redisTemplate matched:
+      - @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RedisConfigure#stringRedisTemplate matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.redis.core.StringRedisTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SimpleCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+
+Negative matches:
+-----------------
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: cacheResolver types: org.springframework.cache.CacheManager; SearchStrategy: all) found beans of type 'org.springframework.cache.CacheManager' cacheManager (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+
+   JedisConnectionConfiguration#redisConnectionFactory:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.data.redis.connection.RedisConnectionFactory; SearchStrategy: all) found beans of type 'org.springframework.data.redis.connection.RedisConnectionFactory' jedisConnectionFactory (OnBeanCondition)
+
+   RedisAutoConfiguration#redisTemplate:
+      Did not match:
+         - @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) found beans named redisTemplate (OnBeanCondition)
+
+   RedisAutoConfiguration#stringRedisTemplate:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.data.redis.core.StringRedisTemplate; SearchStrategy: all) found beans of type 'org.springframework.data.redis.core.StringRedisTemplate' stringRedisTemplate (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-06-17 21:48:10.038 security [Thread-52] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'febsAsyncThreadPool'
+2020-06-17 21:48:10.050 security [Thread-52] INFO  c.b.d.d.DynamicRoutingDataSource - closing dynamicDatasource  ing....
+2020-06-17 21:48:10.051 security [Thread-52] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown initiated...
+2020-06-17 21:48:10.063 security [Thread-52] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown completed.
+2020-06-17 21:48:12.060 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 18704 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 21:48:12.063 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 21:48:13.678 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 21:48:13.678 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 21:48:13.710 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2020-06-17 21:48:14.847 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:48:14.848 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4757bc81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:48:14.951 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:48:14.952 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:48:14.959 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfigure' of type [com.jzrd.security.system.config.RedisConfigure$$EnhancerBySpringCGLIB$$e669437c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:48:15.892 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9898 (https) 8080 (http)
+2020-06-17 21:48:15.893 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 21:48:15.894 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-17 21:48:15.896 security [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-17 21:48:15.896 security [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-17 21:48:15.924 security [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-17 21:48:15.924 security [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3849 ms
+2020-06-17 21:48:15.951 security [restartedMain] INFO  c.jzrd.security.system.xss.XssFilter - ------------ xss filter init ------------
+2020-06-17 21:48:15.991 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-检测到并开启了p6spy
+2020-06-17 21:48:15.992 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Starting...
+2020-06-17 21:48:16.669 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Start completed.
+2020-06-17 21:48:16.671 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 初始共加载 1 个数据源
+2020-06-17 21:48:16.672 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-加载 base 成功
+2020-06-17 21:48:16.672 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 当前的默认数据源是单数据源，数据源名为 base
+2020-06-17 21:48:18.846 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+2020-06-17 21:48:18.846 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'febsAsyncThreadPool'
+2020-06-17 21:48:18.865 security [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-17 21:48:19.148 security [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-06-17 21:48:19.231 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - 自定义静态资源目录、此处功能用于文件映射
+2020-06-17 21:48:19.854 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-06-17 21:48:19.858 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-06-17 21:48:19.899 security [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-06-17 21:48:20.375 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 21:48:21.107 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-17 21:48:21.111 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9898 (https) 8080 (http) with context path ''
+2020-06-17 21:48:21.111 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Started SecurityApplication in 9.264 seconds (JVM running for 30951.298)
+2020-06-17 21:48:21.115 security [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-06-17 21:48:35.486 security [Thread-61] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'febsAsyncThreadPool'
+2020-06-17 21:48:35.492 security [Thread-61] INFO  c.b.d.d.DynamicRoutingDataSource - closing dynamicDatasource  ing....
+2020-06-17 21:48:35.492 security [Thread-61] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown initiated...
+2020-06-17 21:48:35.722 security [Thread-61] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown completed.
+2020-06-17 21:48:37.211 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 18704 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 21:48:37.215 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 21:48:39.325 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 21:48:39.325 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 21:48:39.349 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-06-17 21:48:39.769 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:48:39.769 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4757bc81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:48:39.814 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:48:39.815 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:48:39.819 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfigure' of type [com.jzrd.security.system.config.RedisConfigure$$EnhancerBySpringCGLIB$$e669437c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:48:40.726 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9898 (https) 8080 (http)
+2020-06-17 21:48:40.727 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 21:48:40.729 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-17 21:48:40.735 security [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-17 21:48:40.736 security [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-17 21:48:40.785 security [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-17 21:48:40.785 security [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3556 ms
+2020-06-17 21:48:40.850 security [restartedMain] INFO  c.jzrd.security.system.xss.XssFilter - ------------ xss filter init ------------
+2020-06-17 21:48:40.931 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-检测到并开启了p6spy
+2020-06-17 21:48:40.935 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Starting...
+2020-06-17 21:48:41.792 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Start completed.
+2020-06-17 21:48:41.793 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 初始共加载 1 个数据源
+2020-06-17 21:48:41.793 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-加载 base 成功
+2020-06-17 21:48:41.793 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 当前的默认数据源是单数据源，数据源名为 base
+2020-06-17 21:48:45.203 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+2020-06-17 21:48:45.204 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'febsAsyncThreadPool'
+2020-06-17 21:48:45.251 security [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-17 21:48:45.574 security [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-06-17 21:48:45.757 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - 自定义静态资源目录、此处功能用于文件映射
+2020-06-17 21:48:46.538 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-06-17 21:48:46.551 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-06-17 21:48:46.757 security [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-06-17 21:48:47.446 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 21:48:48.183 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-17 21:48:48.198 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9898 (https) 8080 (http) with context path ''
+2020-06-17 21:48:48.199 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Started SecurityApplication in 11.23 seconds (JVM running for 30978.386)
+2020-06-17 21:48:48.205 security [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-06-17 21:48:57.555 security [Thread-67] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'febsAsyncThreadPool'
+2020-06-17 21:48:57.565 security [Thread-67] INFO  c.b.d.d.DynamicRoutingDataSource - closing dynamicDatasource  ing....
+2020-06-17 21:48:57.566 security [Thread-67] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown initiated...
+2020-06-17 21:48:57.582 security [Thread-67] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown completed.
+2020-06-17 21:48:59.022 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 18704 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 21:48:59.022 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 21:49:00.229 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 21:49:00.229 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 21:49:00.260 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-06-17 21:49:00.649 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:49:00.650 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4757bc81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:49:00.656 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:49:00.658 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:49:00.662 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfigure' of type [com.jzrd.security.system.config.RedisConfigure$$EnhancerBySpringCGLIB$$e669437c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 21:49:01.280 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9898 (https) 8080 (http)
+2020-06-17 21:49:01.282 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 21:49:01.283 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-17 21:49:01.286 security [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-17 21:49:01.286 security [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-17 21:49:01.353 security [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-17 21:49:01.353 security [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2311 ms
+2020-06-17 21:49:01.479 security [restartedMain] INFO  c.jzrd.security.system.xss.XssFilter - ------------ xss filter init ------------
+2020-06-17 21:49:01.868 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-检测到并开启了p6spy
+2020-06-17 21:49:01.869 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Starting...
+2020-06-17 21:49:02.407 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Start completed.
+2020-06-17 21:49:02.408 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 初始共加载 1 个数据源
+2020-06-17 21:49:02.408 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-加载 base 成功
+2020-06-17 21:49:02.408 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 当前的默认数据源是单数据源，数据源名为 base
+2020-06-17 21:49:05.164 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService
+2020-06-17 21:49:05.167 security [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'febsAsyncThreadPool'
+2020-06-17 21:49:05.183 security [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-17 21:49:05.364 security [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-06-17 21:49:05.428 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - 自定义静态资源目录、此处功能用于文件映射
+2020-06-17 21:49:05.974 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-06-17 21:49:05.979 security [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-06-17 21:49:05.993 security [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-06-17 21:49:06.496 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 21:49:07.427 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-06-17 21:49:07.431 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9898 (https) 8080 (http) with context path ''
+2020-06-17 21:49:07.432 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Started SecurityApplication in 8.511 seconds (JVM running for 30997.618)
+2020-06-17 21:49:07.435 security [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-06-17 22:00:33.622 security [Thread-73] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'febsAsyncThreadPool'
+2020-06-17 22:00:33.629 security [Thread-73] INFO  c.b.d.d.DynamicRoutingDataSource - closing dynamicDatasource  ing....
+2020-06-17 22:00:33.629 security [Thread-73] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown initiated...
+2020-06-17 22:00:33.646 security [Thread-73] INFO  com.zaxxer.hikari.HikariDataSource - base - Shutdown completed.
+2020-06-17 22:00:34.799 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 18704 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 22:00:34.800 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 22:00:36.414 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 22:00:36.414 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 22:00:36.415 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 Redis repository interfaces.
+2020-06-17 22:00:36.709 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 22:00:36.710 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4757bc81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 22:00:36.712 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 22:00:36.712 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 22:00:36.740 security [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-17 22:03:57.483 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - Starting SecurityApplication on Lucky-HP with PID 18704 (D:\IDEA_workspaces\security\target\classes started by Dreamer in D:\IDEA_workspaces\security)
+2020-06-17 22:03:57.483 security [restartedMain] INFO  c.jzrd.security.SecurityApplication - The following profiles are active: dev
+2020-06-17 22:03:58.649 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 22:03:58.650 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 22:03:58.680 security [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2020-06-17 22:03:58.943 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 22:03:58.943 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4757bc81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 22:03:58.945 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 22:03:58.946 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 22:03:58.952 security [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfigure' of type [com.jzrd.security.system.config.RedisConfigure$$EnhancerBySpringCGLIB$$e669437c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 22:03:59.245 security [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9898 (https) 8080 (http)
+2020-06-17 22:03:59.246 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-9898"]
+2020-06-17 22:03:59.247 security [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-17 22:03:59.252 security [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-17 22:03:59.253 security [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-17 22:03:59.312 security [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-17 22:03:59.312 security [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1816 ms
+2020-06-17 22:03:59.406 security [restartedMain] INFO  c.jzrd.security.system.xss.XssFilter - ------------ xss filter init ------------
+2020-06-17 22:03:59.474 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-检测到并开启了p6spy
+2020-06-17 22:03:59.474 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Starting...
+2020-06-17 22:04:00.079 security [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - base - Start completed.
+2020-06-17 22:04:00.080 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 初始共加载 1 个数据源
+2020-06-17 22:04:00.080 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-加载 base 成功
+2020-06-17 22:04:00.080 security [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - 当前的默认数据源是单数据源，数据源名为 base

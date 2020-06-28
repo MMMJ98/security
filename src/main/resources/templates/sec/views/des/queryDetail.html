@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../../layui/css/layui.css" media="all">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+    <script src="../../../../layui/layui.js"></script>
+    <script src="../../../../layui/layui.all.js"></script>
+    <script src="../../../../layui/layui_exts/excel.js"></script>
+    <script src="../../../../layui/layui_exts/excel.min.js"></script>
+</head>
+<body>
+<div class="layui-collapse" style="width: 85%;height: 85%;margin-top: 3%;margin-left: 8%">
+    <div class="layui-colla-item">
+        <h2 class="layui-colla-title">查询结果明细</h2>
+        <div class="layui-colla-content layui-show">
+
+            <table lay-filter="resultTable" id="resultTable"></table>
+        </div>
+    </div>
+    <div class="layui-colla-item">
+        <h2 class="layui-colla-title">检查附件列表</h2>
+        <div class="layui-colla-content layui-show" id="att_url">
+        </div>
+    </div>
+    <div class="layui-colla-item">
+        <h2 class="layui-colla-title">备注</h2>
+        <div class="layui-colla-content layui-show" id="remark">
+        </div>
+    </div>
+</div>
+
+<script data-th-inline="javascript" type="text/javascript">
+    layui.use(['jquery', 'layer', 'form', 'table', 'element'], function () {
+        var $ = layui.$,
+            table = layui.table,
+            form = layui.form,
+            laydate = layui.laydate,
+            element = layui.element,
+            layer = layui.layer,
+            resultId = [[${resultId}]],
+            resultDetails = [[${details}]],
+            remark = [[${remark}]],
+            attachments = [[${attachments}]];
+        form.render();
+
+        element.init();
+
+        table.render({
+            id: 'resultTable',
+            elem: '#resultTable',
+            data: resultDetails,
+            sort: true,
+            page: false,
+            cols: [
+                [
+                    {field: 'entryName', title: '检查条目', minWidth: 300, align: "center", sort: true},
+                    {field: 'objectName', title: '检查对象', align: "center", sort: true},
+                    {field: 'itemName', title: '检查项', align: "center"},
+                    {field: 'itemResult', title: '检查结果', align: "center"}
+                ]
+            ]
+        });
+
+        if (attachments.length == 0) {
+            $('#att_url').append("暂无附件")
+        } else {
+            for (var i in attachments) {
+                $('#att_url').append(
+                    "<a href='" + attachments[i].url + "'target='_blank' title='点击查看原图'>"
+                    + "<image src=' " + attachments[i].url + "' style='width:150px; height:150px'/>" + "</a> "
+                )
+            }
+        }
+
+        if (remark != null) {
+            $('#remark').append(remark)
+        } else {
+            $('#remark').append("暂无备注信息")
+        }
+    });
+</script>
+</body>
+</html>
